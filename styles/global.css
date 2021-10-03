@@ -1,0 +1,144 @@
+:root {
+  --azul-claro: hsl(225, 100%, 94%);
+  --azul: hsl(245, 75%, 52%);
+  --azul-bem-claro: hsl(225, 100%, 98%);
+  --azul-desbotado: hsl(224, 23%, 55%);
+  --azul-escuro: hsl(223, 47%, 23%);
+}
+
+html, body, h1, h2, h3, h4, h5, h6, p, img {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+.card-container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../assets/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  max-width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--azul-bem-claro);
+  border-radius: 1rem;
+}
+
+.card-header img {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 70%;
+  padding: 1rem;
+}
+
+.card-body h1 {
+  font-size: 1.6rem;
+  padding-top: 0.5rem;
+  font-weight: 900;
+  color: var(--azul-escuro);
+  letter-spacing: -1px;
+}
+
+.card-body p {
+  font-size: 1rem;
+  padding: 2rem 3rem;
+  text-align: center;
+  color: var(--azul-desbotado);
+}
+
+.card-body div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1rem;
+}
+
+.card-body div h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--azul-escuro);
+}
+
+.card-body div h3 p {
+  font-size: 0.75rem;
+  padding: 0;
+  text-align: start;
+}
+
+.card-body button {
+  width: 100%;
+  padding: 0.75rem;
+  margin: .1rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.btn-confirm {
+  background-color: var(--azul);
+  color: #fff;
+}
+
+.btn-confirm:hover {
+  background-color: #2FA186;
+}
+
+.btn-cancel {
+  color: var(--azul-desbotado);
+}
+
+.btn-cancel:hover {
+  background-color: #FF7175;
+  color: #fff;
+}
+/*# sourceMappingURL=global.css.map */

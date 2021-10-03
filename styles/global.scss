@@ -1,0 +1,116 @@
+:root{
+    --azul-claro: hsl(225, 100%, 94%);
+    --azul: hsl(245, 75%, 52%);
+    --azul-bem-claro: hsl(225, 100%, 98%);
+    --azul-desbotado: hsl(224, 23%, 55%);
+    --azul-escuro: hsl(223, 47%, 23%);
+}
+
+// CSS RESET
+html, body, h1, h2, h3, h4, h5, h6, p, img{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.card-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card{
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--azul-bem-claro);
+    border-radius: 1rem;
+    
+}
+
+.card-header{
+    img{
+        border-radius: 1rem 1rem 0 0;
+    }
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 70%;
+    padding: 1rem;
+
+    h1{
+        font-size: 1.6rem;
+        padding-top: 0.5rem;
+        font-weight: 900;
+        color: var(--azul-escuro);
+        letter-spacing: -1px;
+    }
+
+    p{
+        font-size: 1rem;
+        padding: 2rem 3rem;
+        text-align: center;
+        color: var(--azul-desbotado);
+    }
+
+    div{
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 1rem;
+        
+        h3{
+            display: flex;
+            flex-direction: column;
+            font-size: 1rem;
+            font-weight: 900;
+            color: var(--azul-escuro);
+
+            p{
+                font-size: 0.75rem;
+                padding: 0;
+                text-align: start;
+            }
+        }
+    }
+
+    button{
+        width: 100%;
+        padding: 0.75rem;
+        margin: .1rem;
+        border-radius: 12px;
+        border: none;
+        cursor: pointer;
+        transition: all ease 0.5s;
+    }
+}//fim card-body
+
+
+
+.btn-confirm{
+    background-color: var(--azul);
+    color: #fff;
+    
+    &:hover{
+        background-color: #2FA186;
+    }
+}
+
+.btn-cancel{
+    color: var(--azul-desbotado);
+    
+    &:hover{
+        background-color: #FF7175;
+        color: #fff;
+    }
+}
